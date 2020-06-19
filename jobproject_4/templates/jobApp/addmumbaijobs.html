@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends 'jobApp/base.html' %}
+{% block content_block%}
+  <div class="container" align='center'>
+    <h1>ADD MUMBAI JOBS</h1>
+    <form class="" action="" method="post">
+      <table border="2px">
+          {{form}}
+          {% csrf_token %}
+      </table>
+      <input type="submit" class="btn btn-primary" value="Insertion record">
+    </form>
+
+  </div>
+
+{% endblock %}

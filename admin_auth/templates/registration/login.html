@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" align='center'>
+        <h1>Please Login Here....</h1>
+        <form action="" method="post">
+
+            {% csrf_token %}
+            <label for="user">Username:</label>
+            <input type="text" name="username" id='user' placeholder="Username"><br>
+            <label for="pas">Password:</label>
+            <input type="password" id='pas' name="password" placeholder="Password"><br>
+            <input type="submit" value="Login"><br>
+            <span>
+                {% for msg in messages%}
+                    {{msg}}
+                {% endfor %}
+            </span><br>
+            <a href="/reset_password">Password Reset</a><span> /</span>
+            <a href="/password_change">Change Password</a>
+        </form>
+    </div>
+    
+        
+</body>
+</html>

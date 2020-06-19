@@ -1,0 +1,26 @@
+body{
+  background: url(https://images.unsplash.com/photo-1498758536662-35b82cd15e29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:
+}
+h1{
+  color: red;
+  text-align: center;
+}
+table{
+  margin: auto;
+  border: 2px solid red;
+  color: red;
+  background-color:#00FF00;
+}
+td{
+  border: 2px solid red;
+  color:cyan;
+  background: black;
+
+}
+th{
+  border: 2px solid red;
+  color: blue;
+}

@@ -1,0 +1,22 @@
+[
+{
+    "model": "testApp.employee",
+    "pk": 1,
+    "fields": {
+        "eno": 100,
+        "ename": "gagan",
+        "esal": 20000.0,
+        "eaddr": "Mumbai"
+    }
+},
+{
+    "model": "testApp.employee",
+    "pk": 2,
+    "fields": {
+        "eno": 101,
+        "ename": "Paro",
+        "esal": 30000.0,
+        "eaddr": "Hyderabad"
+    }
+}
+]

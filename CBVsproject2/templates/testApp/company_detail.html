@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends 'testApp/base.html'%}
+{% block body_block %}
+<h1>{{company.cname}} information:</h1>
+<ul>
+  <li>Compmnay Location:{{company.clocation}}</li>
+  <li>Company CEO:{{company.cceo}}</li>
+
+  <a href="/update_view/{{company.id}}" class="btn btn-lg btn-warning">update details</a>
+  <a href="/delete_view/{{company.id}}" class="btn btn-lg btn-danger">delete details</a>
+</ul>
+
+
+
+
+{% endblock %}

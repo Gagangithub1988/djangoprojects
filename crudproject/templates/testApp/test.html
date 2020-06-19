@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'testApp/crud.html' %}
+{%block body_block%}
+    <h1>Employee Insertion Form:</h1>
+
+    <form method="post">
+        <table border="2px">
+            {{form}}
+            {% csrf_token%}
+        </table>
+
+
+        <input type="submit" class="btn btn-primary" value="Insertion record">
+    </form>
+{% endblock %}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends 'testApp/base.html' %}
+{% block body_block%}
+  <h1>List of Beers:</h1>
+  <table border="1px">
+    <thead>
+      <th>Name</th>
+      <th>Update</th>
+      <th>Delete</th>
+    </thead>
+    {% for beer in beer_list %}
+    <tr>
+      <td><a href="/beerdetail/{{beer.id}}">{{beer.name}}</a></td>
+      <td><a href="/beerupdate/{{beer.id}}">Update</a></td>
+      <td><a href="/beerdelete/{{beer.id}}">Delete</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+  <a href="/addbeer" class="btn btn-lg btn-primary">Add Beer</a>
+{% endblock %}

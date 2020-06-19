@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'testApp/base.html' %}
+{% block body_block%}
+  <h1>Details of Beers:</h1>
+  <table border="1px">
+    <thead>
+      <th>Name</th>
+      <th>Taste</th>
+      <th>Color</th>
+      <th>Price</th>
+    </thead>
+    <tr>
+      <td>{{beer.name}}</td>
+      <td>{{beer.taste}}</td>
+      <td>{{beer.color}}</td>
+      <td>{{beer.price}}</td>
+    </tr>
+  </table>
+{% endblock %}

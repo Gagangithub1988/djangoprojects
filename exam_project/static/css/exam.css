@@ -1,0 +1,36 @@
+a{
+  color: white;
+}
+body{
+  background-image: url('https://images.unsplash.com/photo-1534521296698-8ab27b628bf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jumbotron{
+  color: white;
+  height: 250px;
+  width: 1200px;
+}
+img{
+  height: 150px;
+  width: 300px;
+  padding: 0 0 0 0;
+  border: 20px;
+}
+.quize{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+}
+.submit{
+  margin-left: 500px;
+}
+button{
+  margin-left: 70px;
+}
+.user{
+  color: cyan;
+  margin-top: 7px;
+  font-style: normal;
+  font-weight: bold;
+}

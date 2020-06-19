@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% load cust_filter %}
+    <h1>Company Role Informations</h1>
+    {% for r in data_list %}
+    <ul>
+      <li>{{r.name|title|add:' Pvt Ltd'}}</li>
+      <li>{{r.subject|truncate5}}</li>
+      <li>{{r.dept|lower}}</li>
+      <li>{{r.date|lower}}</li>
+    </ul><hr>
+    {% endfor %}
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'jobApp/base.html' %}
+{% block content_block%}
+  <div class="container" align='center'>
+    <h1>PUNE LATEST JOBS</h1>
+    <table >
+      <thead>
+        <th>Date</th>
+        <th>Compnay Name</th>
+        <th>Title</th>
+        <th>Eligibility</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>Phone No.</th>
+      </thead>
+      {% for job in pune_jobs%}
+      <tr>
+          <td>{{job.date}}</td>
+          <td>{{job.company}}</td>
+          <td>{{job.title}}</td>
+          <td>{{job.eligibility}}</td>
+          <td>{{job.address}}</td>
+          <td>{{job.email}}</td>
+          <td>{{job.phnno}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>school</title>
+  </head>
+  <body>
+    <table border="1px">
+      <thead>
+        <th>Name</th>
+        <th>Roll No</th>
+        <th>Address</th>
+      </thead>
+      {%for sch in school%}
+      <tr>
+        <td>{{sch.name}}</td>
+        <td>{{sch.rollno}}</td>
+        <td>{{sch.addr}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+  </body>
+</html>

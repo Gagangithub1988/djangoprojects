@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends 'testApp/base.html'%}
+{% block body_block %}
+<h1>Company information:</h1>
+{% for cmp in company_list%}
+<h1><a href="/detail_view/{{cmp.id}}">{{cmp.cname}}</a><br></h1>
+{% endfor%}
+<a href="/create_view" class="btn btn-lg btn-primary">Add new company</a>
+{% endblock %}

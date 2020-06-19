@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Gagan</h1>
+    {% for emp in employee%}
+    <ul>
+        <li>{{emp.ename}}</li>
+        <li><img src="{{emp.eprofile_pic.url}}" width='240' height='240' alt=""></li>
+    </ul>
+    {% endfor %}
+    <img src="" alt="Tuli"><span>  </span>
+    <img src="" alt="Susu"><span>  </span>
+    <img src="" alt="Paro"><span>  </span>
+    <img src="" alt="Bishnu"><span>  </span>
+    <img src="" alt="Gagan"><span>  </span>
+</body>
+</html>

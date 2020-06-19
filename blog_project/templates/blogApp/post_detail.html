@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% extends 'blogApp/base.html' %}
+{% block title_block %}GAGAN'S BLOG HOME PAGE{% endblock %}
+  {% block content_block %}
+    <h1>{{post.title}}</h1>
+    <p><i id='date'>published on {{post.publish}} by {{post.author|title}}</i></p><hr>
+    {{post.body}}<br><br><br>
+
+    <div class="container" align='center'>
+      <a href="/share/{{post.id}}" class="btn btn-lg btn-success">Share Post By Email</a>
+    </div>
+
+    {% with comment.count as comment_count %}
+      <h2>{{comment_count}} Comment{{comment_count|pluralize}}</h2>
+    {% endwith %}
+
+    {% if comment %}
+      {% for com in comment %}
+        <h3 id='ch'>Comment {{forloop.counter}} by {{com.name}} on {{com.created}}</h3>
+        <div class="cb">{{com.body|linebreaks}}</div>
+      {% endfor %}
+      <br>
+    {% else %}
+      <p>There are no comments yet!!!</p>
+    {% endif %}
+    {% if cssubmit %}
+      <h2>Your Comment added successfully</h2>
+    {%else%}
+      <form method="post">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" name="" value="Submit Comment">
+      </form>
+    {% endif %}
+
+
+
+  {% endblock %}

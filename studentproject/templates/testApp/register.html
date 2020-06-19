@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/streg.css" %}">
+    <title></title>
+  </head>
+  <body>
+
+    <div class="container" align='center'>
+      <form method="post">
+        <h1>Student Registration From</h1>
+        {{form.as_p}}
+        {% csrf_token%}
+        <input type="submit" class='btn btn-primary' value="Register">
+      </form>
+
+    </div>
+  </body>
+</html>

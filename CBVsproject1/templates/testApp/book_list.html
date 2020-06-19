@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Book inforamtion</h1>
+    {% for book in book_list%}
+    <a href="/test1/{{book.id}}">{{book.title}}</a>
+    {% endfor %}
+  </body>
+</html>

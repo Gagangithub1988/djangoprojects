@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends 'testApp/base.html'%}
+{% block body_block %}
+<h1>please insert below details to add new company:</h1>
+<form method="post">
+  {{form.as_p}}
+  {% csrf_token %}
+  <button type="submit" class="btn btn-lg btn-primary" name="button" value="insert/update">Submit</button>
+</form>
+{% endblock %}
