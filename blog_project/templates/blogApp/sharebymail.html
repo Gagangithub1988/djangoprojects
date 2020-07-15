@@ -7,10 +7,15 @@
     <h2>Post with title: {{post.title}} information shared by email</h2>
     {% else %}
       <h1>Share post with title:{{post.title}} By Email</h1>
-        <form method="post">
-          {{form.as_p}}
-          {% csrf_token %}
-          <input type="submit" class="btn btn-lg btn-primary" name="" value="Send Mail">
+      <div class="container" align='center'>
+        <form method="POST" class="td">
+            <table >
+                {{form.as_table}}
+                {% csrf_token %}
+            </table>
+            <input type="submit" class="btn btn-primary btn-lg btn-warning" value="Send Mail">
         </form>
+    </div>
+        
     {% endif %}
     {% endblock %}

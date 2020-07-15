@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'testApp',
+    'blogApp',
+    'taggit',
 ]
 
 MIDDLEWARE = [
@@ -77,12 +79,8 @@ AUTH_USER_MODEL= 'testApp.Account'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'exam_database_1',
-        'USER':'postgres',
-        'PASSWORD':'sql2020',
-        'HOST':'localhost',
-        'POST':'5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
     
 }
@@ -139,7 +137,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT= 587
 EMAIL_HOST_USER='djangopython1988@gmail.com'
-EMAIL_HOST_PASSWORD='Python@3214'
+EMAIL_HOST_PASSWORD='XXXXXXXXXXXXX'
 EMAIL_USE_TLS=True
 
 
